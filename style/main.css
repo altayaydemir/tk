@@ -2,21 +2,42 @@ body {
   background: url('../img/bg.jpg');
   padding: 0;
   margin: 0;
+  text-align: center;
+}
+
+main {
+  height: 400vh;
+}
+
+a:hover {
+  cursor: pointer;
+}
+
+a:hover > img {
+  cursor: pointer;
+}
+
+#tk-link {
+  margin-top: 100vh;
+  display: inline-block;
+}
+
+#tk-link:hover > #tk {
+  transform: rotate(180deg);
 }
 
 #tk {
-  display: block;
-  margin: auto;
   width: 240px;
+  transition: all 0.5s ease-out;
   height: auto;
 }
 
 .media {
   margin: 120px auto;
-  text-align: center;
 }
 
 .media > a {
+  display: inline-block;
   margin: 0 60px;
 }
 
@@ -28,6 +49,10 @@ body {
 .media > a:hover > img {}
 
 @media screen and (max-width: 640px) {
+  body {
+    background: url('../img/bg_mobile.jpg');
+  }
+
   #tk {
     width: 140px;
   }
